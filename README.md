@@ -29,14 +29,20 @@ npm i
 npm run dev
 ```
 ## Setting up enviorment variables
->👉Goto **.env** file in your project
->👉 Now goto supabase ->your project
->👉In the left sidebar goto project settings and then API and copy and paste your 
 
-Project url in "VITE_SUPABASE_URL"
-Anon public key in "VITE_SUPABASE_ANON_KEY"
-Servicerole secret in "SUPABASE_PRIVATE_KEY"
-JWT secret in "SUPABASE_JWT_SECRET"
+1. Goto **.env** file in your project
+
+2. Now goto supabase ->your project
+
+3. In the left sidebar goto project settings and then API and copy and paste your 
+
+  1. Project url in "VITE_SUPABASE_URL"
+
+  1. Anon public key in "VITE_SUPABASE_ANON_KEY"
+
+  1. Servicerole secret in "SUPABASE_PRIVATE_KEY"
+
+  1. JWT secret in "SUPABASE_JWT_SECRET"
 
 ## Making Login file
 Make a **login.svelte** in **src/lib**
