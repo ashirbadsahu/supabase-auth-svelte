@@ -25,9 +25,17 @@
       updateUserStatus(session);
     });
   });
+  //For Logout
+  const logout = async () => {
+    {
+      await supabase.auth.signOut();
+    }
+    goto("/");
+  };
 </script>
 {#if isLoggedIn}
   Hii {$user.email}!
+  <button on:click={() => logout()}>Logout</button>
 {:else}
 <Login />
 {/if}

@@ -157,5 +157,17 @@ Now use this code in any page to get userdata something like this
 <Login />
 {/if}
 ```
+## To Logout user
+  ```bash
+    <script>
+        const logout = async () => {
+    {
+      await supabase.auth.signOut();
+    }
+    goto("/");
+  };
 
+    </script>
+    <button on:click={() => logout()}>Logout</button>
+  ```
 Hope it helps!!!
