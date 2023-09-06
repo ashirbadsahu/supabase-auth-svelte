@@ -36,19 +36,14 @@ npm run dev
 
 3. In the left sidebar goto project settings and then API and copy and paste your 
 
-  Project url in "VITE_SUPABASE_URL"
-
-  Anon public key in "VITE_SUPABASE_ANON_KEY"
-
-  Servicerole secret in "SUPABASE_PRIVATE_KEY"
-
-  JWT secret in "SUPABASE_JWT_SECRET"
+  **Project url in "VITE_SUPABASE_URL", Anon public key in "VITE_SUPABASE_ANON_KEY", Servicerole secret in "SUPABASE_PRIVATE_KEY", JWT secret in "SUPABASE_JWT_SECRET"**
 
 ## Making Login file
 Make a **login.svelte** in **src/lib**
 Now add the following code there.
 >[!Note]  
->While local development disable email conformation in Auth -> Providers -> Email -> Confirm email
+>While local development disable email conformation in Auth -> Providers -> Email -> Confirm email, also you can disable row level security.
+>However you can enable it later for deploying or other purposes.
 
 ```bash
 <script>
@@ -170,4 +165,6 @@ Now use this code in any page to get userdata something like this
     </script>
     <button on:click={() => logout()}>Logout</button>
   ```
+  You can deploy it in vercel for free and make sure to paste enviorment variables(variables insdie .env file) in vercel while deploying it.
+  
 Hope it helps!!!
