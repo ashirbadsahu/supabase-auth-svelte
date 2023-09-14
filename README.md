@@ -1,5 +1,5 @@
 # supabase Auth using sveltekit
-
+This is a simplified app to help getting started with supabase using sveltekit.
 
 
 ## Creating a project
@@ -32,7 +32,7 @@ npm run dev
 
 1. Goto **.env** file in your project
 
-2. Now goto supabase ->your project
+2. Now goto supabase -> your project
 
 3. In the left sidebar goto project settings and then API and copy and paste your 
 
@@ -108,7 +108,7 @@ Now add the following code there.
 </div>
 
 ```
-Also if you want to display userdata in any page first create a **stores.js** file in lib and you can use this code.
+Also if you want to display userdata in any page first create a **stores.js** file in src/slib and you can use this code.
 ```bash
 import { writable } from "svelte/store";
 
